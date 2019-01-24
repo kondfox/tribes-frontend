@@ -1,14 +1,13 @@
 import React, { Component } from 'react';
 import axios from 'axios';
 import { server } from '../constants.js';
+import Kingdom from './Kingdom';
 
 class App extends Component {
 
 constructor(props) {
   super(props);
-  this.state = {
-    content: '',
-  }
+  this.state = {};
 }
   
   componentDidMount() {
@@ -22,7 +21,7 @@ constructor(props) {
   render() {
     return (
       <div className="App">
-        {this.state.content}
+        <Kingdom />
       </div>
     );
   }
