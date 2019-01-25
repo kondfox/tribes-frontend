@@ -59,4 +59,10 @@ const buildingConstructors = [
   },
 ];
 
-export { server, menuItems, initResources, buildingConstructors };
+const images = {
+  troop: '',
+  attack: '',
+  defence: '',
+};
+
+export { server, menuItems, initResources, buildingConstructors, images };
