@@ -5,7 +5,10 @@ const BuildingList = ({ buildings }) => {
   return (
     <div>
       {buildings.map(building => 
-        <BuildingItem key={building.name} building={building} />
+        <BuildingItem key={building.name}
+          name={building.name}
+          level={building.level}
+        />
       )}
     </div>
   );

@@ -5,7 +5,11 @@ const Resources = ({ resources }) => {
   return (
     <div>
       {resources.map(resource => 
-        <Resource resource={resource} />
+        <Resource key={resource.name} 
+          name={resource.name}
+          value={resource.value}
+          generation={resource.generation}
+        />
       )}
     </div>
   );

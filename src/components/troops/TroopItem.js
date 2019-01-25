@@ -4,7 +4,7 @@ import { images } from '../../constants';
 const TroopItem = ({ level, count }) => {
   return (
     <div className="troop-item">
-      <img src={images.troop} alt={`${count} Troop level ${level}`} />
+      <img src={images.troops.troop} alt={`${count} Troop level ${level}`} />
       <span>
         {`${count} Troop level ${level}`}
       </span>

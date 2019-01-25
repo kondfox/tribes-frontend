@@ -1,18 +1,19 @@
 import React from 'react';
+import { images } from '../../constants';
 
-const Resource = ({ resource }) => {
+const Resource = ({ name, value, generation }) => {
   return (
     <div className="resource">
       <div className="resource-image">
-        <img src={resource.generatorImage} alt={resource.name} />
+        <img src={images.resources[`${name}Provider`]} alt={name} />
       </div>      
       <div className="resource-info">
         <div>
-          <span>{resource.value}</span>
-          <img src={resource.image} alt={resource.name}/>
+          <span>{value}</span>
+          <img src={images.resources[name]} alt={name}/>
         </div>
         <div>
-          {`${resource.generation} /minute`}
+          {`${generation} /minute`}
         </div>
       </div>
     </div>
