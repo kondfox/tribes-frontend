@@ -1,7 +1,10 @@
 import React, { Component } from 'react';
-import Header from '../components/Header';
-import Menu from '../components/Menu';
-import { menuItems } from '../constants';
+import { BrowserRouter as Router, Route } from 'react-router-dom';
+import Header from '../components/kingdom/Header';
+import Menu from '../components/kingdom/Menu';
+import Resources from '../components/kingdom/Resources';
+import { menuItems, initResources } from '../constants';
+import Buildings from './Buildings';
 
 class Kingdom extends Component {
 
@@ -10,15 +13,23 @@ class Kingdom extends Component {
 
     this.state = {
       menuItems: menuItems,
+      resources: initResources,
     };
   }
 
   render() {
     return (
-      <div>
-        <Header />
-        <Menu menuItems={this.state.menuItems}/>
-      </div>
+      <Router>
+        <div>
+          <Header />
+          <Menu menuItems={this.state.menuItems}/>
+          <Resources resources={this.state.resources} />
+          <Route exact path='' component={Buildings} />
+          <Route exact path='/troops' component={Buildings} />
+          <Route exact path='/battle' component={Buildings} />
+          <Route exact path='/leaderboard' component={Buildings} />
+        </div>
+      </Router>
     )
   }
 }

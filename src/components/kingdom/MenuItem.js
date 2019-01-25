@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const MenuItem = ({ item }) => {
 
@@ -7,10 +8,10 @@ const MenuItem = ({ item }) => {
   }
 
   return (
-    <div className={menuItemClass(item.isSelected)}>
+    <Link to={item.link} className={menuItemClass(item.isSelected)}>
       <img className="menu-item-image" src={item.image} alt={item.title} />
       <h2>{item.title}</h2>
-    </div>
+    </Link>
   );
 }
 
