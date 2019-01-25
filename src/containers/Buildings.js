@@ -7,14 +7,19 @@ class Buildings extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      buildings: [],
+      buildings: [
+        {name: 'townhall', level: 2},
+        {name: 'academy', level: 1},
+        {name: 'farm', level: 1},
+        {name: 'mine', level: 2},
+      ],
       buildingConstructors: buildingConstructors,
     };
   }
 
   render() {
     return (
-      <main>
+      <main className="buildings box">
         <BuildingList buildings={this.state.buildings} />
         <BuildingConstructor buildingConstructors={this.state.buildingConstructors} />
       </main>

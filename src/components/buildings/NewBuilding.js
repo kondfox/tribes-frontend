@@ -3,9 +3,9 @@ import { images } from '../../constants';
 
 const NewBuilding = ({ newBuilding }) => {
   return (
-    <div className="new-building">
-      <img src={images.buildings[newBuilding.name]} alt={`Add ${newBuilding.name}`} />
-      <h2>{`Add ${newBuilding.name}`}</h2>
+    <div className="building">
+      <img className="building-image" src={images.buildings.add[newBuilding]} alt={`Add ${newBuilding}`} />
+      <p>{`Add ${newBuilding}`}</p>
     </div>
   );
 }

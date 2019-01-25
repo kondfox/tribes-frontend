@@ -3,7 +3,7 @@ import Resource from './Resource';
 
 const Resources = ({ resources }) => {
   return (
-    <div>
+    <div className="resources box">
       {resources.map(resource => 
         <Resource key={resource.name} 
           name={resource.name}

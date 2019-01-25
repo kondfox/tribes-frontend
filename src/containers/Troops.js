@@ -31,7 +31,7 @@ class Troops extends Component {
 
   render() {
     return (
-      <main>
+      <main className="box">
         <TroopInfo stats={this.state.stats} />
         <TroopList troops={this.state.troops} />
       </main>

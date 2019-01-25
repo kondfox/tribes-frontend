@@ -4,16 +4,17 @@ import { images } from '../../constants';
 const Resource = ({ name, value, generation }) => {
   return (
     <div className="resource">
-      <div className="resource-image">
-        <img src={images.resources[`${name}Provider`]} alt={name} />
+      <div className="resource-provider">
+        <span class="helper"></span>
+        <img className="resource-provider-image" src={images.resources[`${name}Provider`]} alt={name} />
       </div>      
       <div className="resource-info">
         <div>
-          <span>{value}</span>
-          <img src={images.resources[name]} alt={name}/>
+          <span class="resource-value helper">{value}</span>
+          <img className="resource-image" src={images.resources[name]} alt={name}/>
         </div>
         <div>
-          {`${generation} /minute`}
+          {`${generation} / min`}
         </div>
       </div>
     </div>

@@ -2,7 +2,7 @@ import React from 'react';
 
 const Header = (props) => {
   return (
-    <div>
+    <div className="header">
       <h1>My Kingdom</h1>
       <div className="nav-menu">
         <ul>

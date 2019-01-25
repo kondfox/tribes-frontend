@@ -2,22 +2,22 @@ const server = 'http://localhost:8080';
 
 const menuItems = [
   {
-    title: 'Buildings',
+    title: 'buildings',
     isSelected: true,
     link: '',
   },
   {
-    title: 'Troops',
+    title: 'troops',
     isSelected: false,
     link: '/troops',
   },
   {
-    title: 'Battle',
+    title: 'battle',
     isSelected: false,
     link: '/battle',
   },
   {
-    title: 'Leaderboard',
+    title: 'leaderboard',
     isSelected: false,
     link: '/leaderboard',
   },
@@ -36,37 +36,31 @@ const initResources = [
   },
 ];
 
-const buildingConstructors = [
-  {
-    name: 'Farm',
-    image: '',
-  },
-  {
-    name: 'Mine',
-    image: '',
-  },
-  {
-    name: 'Academy',
-    image: '',
-  },
-];
+const buildingConstructors = ['farm', 'mine', 'academy'];
 
 const images = {
   menu: {
-    buildings: '',
-    troops: '',
-    battle: '',
-    leaderboard: '',
+    buildings: require('./img/assets/buildings.svg'),
+    troops: require('./img/assets/troops.svg'),
+    battle: require('./img/assets/map.svg'),
+    leaderboard: require('./img/assets/leaderboard.svg'),
   },
   buildings: {
-    farm: '',
-    min: '',
+    academy: require('./img/assets/academy.svg'),
+    farm: require('./img/assets/farm.svg'),
+    mine: require('./img/assets/mine.svg'),
+    townhall: require('./img/assets/townhall.svg'),
+    add: {
+      academy: require('./img/assets/addacademy.svg'),
+      farm: require('./img/assets/addfactory.svg'),
+      mine: require('./img/assets/addmine.svg'),
+    }
   },
   resources: {
-    food: '',
-    foodProvider: '',
-    gold: '',
-    goldProvider: '',
+    food: require('./img/assets/bread.png'),
+    foodProvider: require('./img/assets/farm.svg'),
+    gold: require('./img/assets/gold.png'),
+    goldProvider: require('./img/assets/mine.svg'),
   },
   troops: {
     troop: '',

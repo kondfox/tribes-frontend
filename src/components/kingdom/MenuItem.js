@@ -1,17 +1,20 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { images } from '../../constants';
 
-const MenuItem = ({ item }) => {
+const MenuItem = ({ title, isSelected, link, selectMenu }) => {
 
   const menuItemClass = (isSelected) => {
     return isSelected ? 'menu-item selected' : 'menu-item';
   }
 
   return (
-    <Link to={item.link} className={menuItemClass(item.isSelected)}>
-      <img className="menu-item-image" src={item.image} alt={item.title} />
-      <h2>{item.title}</h2>
-    </Link>
+    <li className={menuItemClass(isSelected)} onClick={(e) => selectMenu(title)}>
+      <Link to={link}>
+        <img className="menu-item-image" src={images.menu[title]} alt={title} />
+        <h2>{title}</h2>
+      </Link>
+    </li>
   );
 }
 

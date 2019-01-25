@@ -3,7 +3,7 @@ import BuildingItem from './BuildingItem';
 
 const BuildingList = ({ buildings }) => {
   return (
-    <div>
+    <div className="building-list">
       {buildings.map(building => 
         <BuildingItem key={building.name}
           name={building.name}

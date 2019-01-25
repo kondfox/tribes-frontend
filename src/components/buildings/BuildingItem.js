@@ -3,10 +3,11 @@ import { images } from '../../constants';
 
 const BuildingItem = ({ name, level }) => {
   return (
-    <div>
-      <img src={images.buildings[name]} alt={`${name} level ${level}`} />
-      <div>
-        <h2>{`${name}&#13;Level ${level}`}</h2>
+    <div className="building">
+      <img className="building-image" src={images.buildings[name]} alt={`${name} level ${level}`} />
+      <div className="building-info">
+        <p>{name}</p>
+        <p>{`Level ${level}`}</p>
       </div>
     </div>
   );
