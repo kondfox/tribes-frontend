@@ -63,9 +63,13 @@ const images = {
     goldProvider: require('./img/assets/mine.svg'),
   },
   troops: {
-    troop: '',
-    attack: '',
-    defence: '',
+    stats: {
+      attack: require('./img/assets/attack.svg'),
+      defence: require('./img/assets/defence.svg'),
+      sustenance: require('./img/assets/bread.png'),
+    },
+    troop: require('./img/assets/troops.svg'),
+    troopInfo: require('./img/assets/troopbg.svg'),
   },
 };
 

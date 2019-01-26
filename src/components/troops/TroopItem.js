@@ -1,13 +1,12 @@
 import React from 'react';
-import { images } from '../../constants';
+import TroopCard from './TroopCard';
+import UpgradeExtension from './UpgradeExtension';
 
 const TroopItem = ({ level, count }) => {
   return (
     <div className="troop-item">
-      <img src={images.troops.troop} alt={`${count} Troop level ${level}`} />
-      <span>
-        {`${count} Troop level ${level}`}
-      </span>
+      <TroopCard level={level} count={count} />
+      <UpgradeExtension cost={100} />
     </div>
   );
 }

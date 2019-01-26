@@ -11,7 +11,7 @@ const MenuItem = ({ title, isSelected, link, selectMenu }) => {
   return (
     <li className={menuItemClass(isSelected)} onClick={(e) => selectMenu(title)}>
       <Link to={link}>
-        <img className="menu-item-image" src={images.menu[title]} alt={title} />
+        <img className="round-icon" src={images.menu[title]} alt={title} />
         <h2>{title}</h2>
       </Link>
     </li>

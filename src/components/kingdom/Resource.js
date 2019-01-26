@@ -11,7 +11,7 @@ const Resource = ({ name, value, generation }) => {
       <div className="resource-info">
         <div>
           <span class="resource-value helper">{value}</span>
-          <img className="resource-image" src={images.resources[name]} alt={name}/>
+          <img className="small-icon" src={images.resources[name]} alt={name}/>
         </div>
         <div>
           {`${generation} / min`}

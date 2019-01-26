@@ -5,7 +5,7 @@ const TroopInfoStat = ({ statName, value }) => {
   return (
     <div className="troop-info-stat">
       <span>{`${statName}: ${value}`}</span>
-      <img src={images.troops[statName]} alt={`${statName}: ${value}`}/>
+      <img className="small-icon" src={images.troops.stats[statName]} alt={`${statName}: ${value}`}/>
     </div>
   );
 }

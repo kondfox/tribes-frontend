@@ -19,7 +19,7 @@ class Buildings extends Component {
 
   render() {
     return (
-      <main className="buildings box">
+      <main className="main-panel box">
         <BuildingList buildings={this.state.buildings} />
         <BuildingConstructor buildingConstructors={this.state.buildingConstructors} />
       </main>

@@ -30,9 +30,36 @@ li {
   margin-bottom: 30px;
 }
 
+/* ICONS */
+.small-icon {
+  padding: 0 5px;
+  height: 24px;
+  vertical-align: middle;
+  width: 24px;
+}
+
+.big-icon {
+  border-radius: 13px;
+  height: 123px;
+  width: 123px;
+}
+
+.round-icon {
+  width: 56px;
+  height: 56px;
+}
+
+/* PANELS */
+.main-panel {
+  padding: 20px;
+}
+
 .box {
-  background: #FAFAFA;
-  opacity: 0.8;
+  background: #FAFAFACC;
+}
+
+.shadow {
+  box-shadow: 10px 10px 7px -5px rgba(0,0,0,0.5);
 }
 
 /* HEADER */
@@ -93,11 +120,6 @@ li {
   color: white;
 }
 
-.menu-item-image {
-  width: 56px;
-  height: 56px;
-}
-
 /* RESOURCES */
 .resources {
   display: inline-block;
@@ -121,13 +143,6 @@ li {
   height: 40px;
   vertical-align: middle;
   width: 40px;
-}
-
-.resource-image {
-  padding: 0 5px;
-  height: 28px;
-  vertical-align: middle;
-  width: 28px;
 }
 
 .resource-info {
@@ -161,16 +176,80 @@ li {
   text-align: center;
 }
 
-.building-image {
-  border-radius: 13px;
-  height: 123px;
-  width: 123px;
-}
-
 .building-info {
   padding: 10px 0;
 }
 
 .building-info p {
   margin: 0;
+}
+
+/* TROOPS */
+.troops {
+  font-size: 18px;
+  text-transform: capitalize;
+}
+
+.troop-card,
+.troop-info,
+.troop-list,
+.troop-text,
+.upgrade-extension {
+  display: inline-block;
+}
+
+.troop-info,
+.troop-list {
+  padding: 0 20px;
+}
+
+.troop-card {
+  background: #009587;
+  border-radius: 15px;
+  padding: 5px;
+  position: absolute;
+  width: 280px;
+  z-index: 1;
+}
+
+.troop-info {
+  width: 180px;
+}
+
+.troop-item {
+  color: white;
+  height: 70px;
+  margin-bottom: 15px;
+  position: relative;
+}
+
+.troop-list {
+  vertical-align: top;
+  width: 400px;
+}
+
+.troop-info-stat {
+  padding: 1px 0;
+}
+
+.troop-stats {
+  margin-top: 10px;
+}
+
+.troop-text {
+  line-height: 60px;
+  padding: 0 15px;
+  vertical-align: top;
+}
+
+.upgrade-extension {
+  background: #FB794B;
+  border-radius: 0 13px 13px 0;
+  height: 48px;
+  left: 265px;
+  line-height: 24px;
+  margin: 8px 0;
+  padding: 3px 10px 3px 33px;
+  position: absolute;
+  text-transform: none;
 }
