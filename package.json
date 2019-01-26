@@ -15,7 +15,10 @@
     "@babel/preset-env": "^7.1.0",
     "@babel/preset-react": "^7.0.0",
     "babel-loader": "^8.0.2",
+    "css-loader": "^2.1.0",
+    "file-loader": "^3.0.1",
     "react-router-dom": "^4.3.1",
+    "svg-inline-loader": "^0.8.0",
     "webpack": "^4.19.1",
     "webpack-cli": "^3.1.0"
   },

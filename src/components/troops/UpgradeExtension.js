@@ -7,7 +7,7 @@ const UpgradeExtension = ({ cost }) => {
       <div>upgrade</div>
       <div>
         <span>{cost}</span>
-        <img className="small-icon" src={images.resources.gold} />
+        <img className="small-icon" src={images.resources.gold} alt={`Upgrade for ${cost} gold`} />
       </div>
     </div>
   );

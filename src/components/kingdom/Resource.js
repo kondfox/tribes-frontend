@@ -5,12 +5,12 @@ const Resource = ({ name, value, generation }) => {
   return (
     <div className="resource">
       <div className="resource-provider">
-        <span class="helper"></span>
+        <span className="helper"></span>
         <img className="resource-provider-image" src={images.resources[`${name}Provider`]} alt={name} />
       </div>      
       <div className="resource-info">
         <div>
-          <span class="resource-value helper">{value}</span>
+          <span className="resource-value helper">{value}</span>
           <img className="small-icon" src={images.resources[name]} alt={name}/>
         </div>
         <div>

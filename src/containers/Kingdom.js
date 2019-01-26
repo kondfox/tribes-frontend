@@ -15,9 +15,11 @@ class Kingdom extends Component {
       menuItems: menuItems,
       resources: initResources,
     };
+
+    this.selectMenu = this.selectMenu.bind(this);
   }
 
-  selectMenu = (selectedTitle) => {
+  selectMenu(selectedTitle) {
     const selectedMenu = this.state.menuItems
       .map(item => item.title === selectedTitle ?
         {...item, isSelected: true} :
